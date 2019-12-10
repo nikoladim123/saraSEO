@@ -1,0 +1,139 @@
+@font-face {
+  font-family: 'Cairo-Light';
+  src: url('../fonts/Cairo-Light.ttf');
+}
+
+body {
+  background: linear-gradient(to bottom, rgba(113,133,246,1) 10%, rgba(255,255,255,0) 61vw);
+  min-height: 100vw;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+}
+
+header{
+      background: #ba4ffd;
+  /* border: 1px solid red; */
+  position: relative;
+  width: 88.5vw;
+  margin-left: 5.25vw;
+  margin-top: 1.4043vw;
+}
+
+header img{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.bgBot{
+  margin-top: 17.63vw;
+}
+
+.bgTrans{
+ margin-top: 11.29vw;
+}
+
+.ship{
+  width: 14vw;
+    left: 37.3vw;
+    top: 5.7vw;
+}
+
+.starsContainer{
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  height: 50vw;
+  /* background: red  */
+}
+
+
+/* stars */
+.singleStar{
+  opacity: 0;
+  position: absolute;
+  width: 0.25vw;
+  height: 0.25vw;
+  border-radius: 50%;
+  background: radial-gradient(ellipse at center, rgba(195,149,196,1) 0%, rgba(195,149,196,1) 90%, rgba(255,255,255,1) 100%);
+  box-shadow: 0px 0px 15px 13px rgba(195,148,196,0.5);
+}
+
+.singleStarAnim{
+  animation-name: singleStarAnim;
+  animation-iteration-count: infinite;
+  animation-direction:  alternate;
+}
+
+@keyframes singleStarAnim {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 0.8;
+  }
+}
+
+
+/* comete */
+.cometCotnainer{
+  width: 100%;
+  height: 100%;
+}
+.comet{
+  width: 5vw;
+  animation-name: comet;
+  transition: 5s;
+  top:-20%;
+  opacity: 0.7;
+}
+@keyframes comet {
+  0%{
+    top:-20%;
+  }
+  100%{
+    top:100%;
+    left: 10%;
+  }
+}
+
+/* header content */
+.SEO{
+  width: 23.196vw;
+  left: 12vw;
+  top: -1.4vw;
+}
+
+.circleGram{
+  width: 31.38vw;
+  position: absolute;
+  top: 22.5vw;
+  left: -3vw;
+}
+
+.squareGraph {
+  width: 34.673vw;
+  /* right: -39vw; */
+  bottom: -3vw;
+  left: auto;
+  top: auto;
+  position: absolute;
+  right: -5vw;
+}
+.textAr{
+  position: absolute;
+  width: 21.791vw;
+  text-align: center;
+  direction: rtl;
+  /* border: 1px solid red; */
+  top: 35vw;
+  left: 33vw;
+}
+
+.textAr p{
+  font-size: 2.9055vw;
+  font-family: 'Cairo-Light';
+  line-height: 1.2;
+}
