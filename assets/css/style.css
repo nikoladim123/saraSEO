@@ -111,6 +111,13 @@ header img{
 }
 
 /* header content */
+
+.globe{
+  position: absolute;
+  left: -2vw;
+  top: -1vw;
+  width: 31.4285vw;
+}
 .SEO{
   width: 23.196vw;
   left: 12vw;
@@ -154,7 +161,7 @@ header img{
 .sectionBlog{
   display: flex;
   justify-content: center;
-  margin-top: 23vw;
+  margin-top: 17vw;
 }
 .leftContent{
   background: white;
