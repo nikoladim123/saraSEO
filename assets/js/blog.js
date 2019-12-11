@@ -70,40 +70,6 @@ popUpCloseButton[0].addEventListener('click',()=>{
 
 
 
-// instagram double hover
-var instaSection = document.getElementsByClassName('instaSection');
-function instaSectionFun() {
-  if(instaSection[0].getClientRects()[0].top < window.innerHeight /3){
-    instaSection[0].style.background = 'transparent';
-  }else{
-    instaSection[0].style.background = 'black';
-    console.log(123);
-  }
-}
-
-
-// instagrid images anim
-var instaGridImages = document.getElementsByClassName('instaGridImages');
-
-
-function instaGridImagesFun(e) {
-  if(e.getClientRects()[0].top < window.innerHeight /1.8){
-    e.style.opacity = '1';
-    e.style.top = '0';
-  }else{
-    e.style.opacity = '0';
-    e.style.top = '2vw';
-  }
-}
-function instaGridCall() {
-  instaGridImagesFun(instaGridImages[0])
-  instaGridImagesFun(instaGridImages[1])
-  instaGridImagesFun(instaGridImages[2])
-  instaGridImagesFun(instaGridImages[3])
-  instaGridImagesFun(instaGridImages[4])
-  instaGridImagesFun(instaGridImages[5])
-}
-
 
 
 // post images anim
@@ -120,10 +86,10 @@ function postImageFun(e) {
 
 function postImageCall() {
   postImageFun(postImage[0]);
-  postImageFun(postImage[1]);
-  postImageFun(postImage[2]);
-  postImageFun(postImage[3]);
-  postImageFun(postImage[4]);
+  // postImageFun(postImage[1]);
+  // postImageFun(postImage[2]);
+  // postImageFun(postImage[3]);
+  // postImageFun(postImage[4]);
 }
 
 
@@ -155,7 +121,6 @@ function rightSideImageAnimClassCall() {
 // window events
 window.addEventListener('scroll',()=>{
   // instaSectionFun(); //insta double hover
-  instaGridCall();
   postImageCall();
   rightSideImageAnimClassCall();
 });
