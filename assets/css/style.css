@@ -215,7 +215,7 @@ header img{
   transition-delay: 1s;
   /* background-color: rgb(249,242,242); */
   /* outline: 1px solid rgb(249,242,242); */
-  padding-top: 2.56vw;
+  padding-top: 0.56vw;
   font-size: 2.3244vw;
   color: #e2764b;
 }
@@ -224,7 +224,8 @@ header img{
   margin-bottom: 0.7vw;
   margin-left: 0.5vw;
   font-family: 'Cairo-Black';
-      margin: 0.35vw;
+  margin: 0.35vw;
+  margin-bottom: 2vw;
 }
 .content{
   transition: 0.4s;
