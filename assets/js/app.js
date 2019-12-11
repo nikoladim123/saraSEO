@@ -51,3 +51,33 @@ setInterval(function () {
     }, 3000);
   }, Math.random()*1000);
 }, 1000);
+
+
+
+// heading text anim
+var headingAnim = document.getElementsByClassName('headingAnim');
+var headingTimeout = 150;
+function headingAnimFun() {
+  headingAnim[0].style.top = '0vw';
+  headingAnim[0].style.opacity = '1';
+  setTimeout(function () {
+    headingAnim[1].style.top = '0vw';
+    headingAnim[1].style.opacity = '1';
+  }, 200);
+  setTimeout(function () {
+    headingAnim[2].style.top = '0vw';
+    headingAnim[2].style.opacity = '1';
+  }, 400);
+}
+
+setTimeout(function () {
+  headingAnimFun();
+  squareGraphFun();
+}, 1000);
+
+// squareGraph
+var squareGraph = document.getElementsByClassName('squareGraph');
+
+function squareGraphFun() {
+  squareGraph[0].style.height = '41.5vw';
+}
