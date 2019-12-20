@@ -183,9 +183,9 @@
     </section>
   </section>
 
-  <div class="blogPopUpContainer">
+  <div class="blogPopUpContainer" style="top: 0px; opacity: 1;">
     <div class="blogPopUpContent">
-      <img class="popUpImage" src="assets/images/blog/blog1.jpg" alt="">
+      <img class="popUpImage" src="assets/images/blog/left1.jpg" alt="">
       <h2>Amps’s new recording gadget and
         the artists who use them .</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequatLorem ipsum
@@ -193,11 +193,19 @@
         amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
       </p>
-      <div class="popUpCloseButton">
-        <p>Close</p>
-      </div>
+      <p class="leaveAcomment">Leave a comment</p>
+      <form class="commentForm" action="index.html" method="post">
+        <textarea name="name" rows="8" cols="80"></textarea>
+        <div class="commentFormInnerInput">
+          <input type="text" name="" value="" placeholder="Name">
+          <input type="text" name="" value="" placeholder="Email">
+        </div>
+        <input type="text" name="" value="" placeholder="Website">
+      </form>
+      <button class="SubmitComment" type="button" name="button">Submit Comment</button>
+      <button class="bigClose" type="button" name="button">CLOSE</button>
     </div>
-  </div>
+    </div>
 
     <script src="assets/js/app.js" charset="utf-8"></script>
     <script src="assets/js/blog.js" charset="utf-8"></script>
